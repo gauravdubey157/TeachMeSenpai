@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TeachMe-Senpai</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    .container-fluid{
+      padding: 7% 15%;
+    }
+    body{
+      font-family: "Montserrat-light",sans-serif;
+      background-color: #191919;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+    #title .container-fluid{
+      padding: 3% 15% 1%;
+      text-align: left;
+    }
+    h1,h2,h3,h4,h5,h6{
+      font-family: 'Montserrat-Black' ,sans-serif;
+    }
+    .colored-section{
+        background-color: #191919;
+        color:#fff;
+    }
+    .bottom-container{
+      background-color: #180A0A;
+      padding: 50px 0 20px;
+      margin-top: 50px;
+    }
+    .footer-link:hover{
+      padding:20px;
+      margin-top: 30px;
+      color:#E0DECA;
+      text-decoration: none;
+    }
+    .footer-link{
+      padding:20px;
+      margin-top: 30px;
+      color:#fff;
+      text-decoration: none;
+    }
+    .white-section{
+        background-color: #fff;
+    }
+    .section-heading{
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+    .big-heading{
+      font-size: 3.5rem;
+      font-weight: 900;
+      line-height: 1.5;
+    }
+    .feature-title{
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    p{
+      color:#8f8f8f;
+    }
+    /* Navigation Bar */
+    .navbar{
+      padding:0 0 4.5rem;
+    }
+    .navbar-brand{
+      font-family:"Ubuntu";
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .nav-item{
+      padding: 0 18px;
+    }
+    .nav-link{
+      font-size: 1.2rem;
+      font-family: "Montserrat-Light";
+      color: #fff;
+    }
+    /* download buttons */
+    .download-button{
+      margin: 5% 3% 5% 0;
+    }
+    /* title image  */
+    .title-image{
+      width :45%;
+      transform: rotate(15deg);
+      position: absolute;
+      right: 7%;
+      top:10%;
+    }
+    .icon{
+      width:20%;
+    }
+    #features{
+      position: relative;
+      z-index: 1;
+    }
+    .features{
+      padding: 5%;
+    }
+    .second{
+      padding: 5%;
+    }
+    #testimonials{
+       color: #fff;
+    }
+    .testimonial-image{
+      width: 10%;
+      border-radius: 100%;
+      margin: 20px;
+    }
+    .testimonial-text{
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+    @media (max-width:1028px)
+    {
+      .title-image{
+        position: static;
+        width:75%;
+        transform: rotate(0);
+      }
+      #title{
+        text-align: center;
+      }
+    }
+    .mainBody{
+      display: flex;
+      flex-direction: column;
+    }
+    #testimonial-carousel{
+      height: 70vh;
+      width: 100%;
+    }
+    .navbar-nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-link{
+      color: grey;
+    }
+    .card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      background-color: inherit;
+      color: #fff;
+      border: 2px solid white;
+      border-radius: 1rem;
+    }
+
+  </style>
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://kit.fontawesome.com/a9cfdab3ef.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <br><br><br>
+  <div class="mainBody colored-section">
+    <h1><%=title%></h1>
+    <center>
+      <div style="width:80%; word-wrap:break-word;">
+        <p><%=content%></p>
+      </div>
+    </center>
+    <br><br><br>
+    <a href="/explore">
+      <button type="button" class="btn btn-lg btn-outline-light">
+        Go back
+      </button>
+    </a>
+  </div>
+</body>
+
+</html>

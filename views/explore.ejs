@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+  <h1>Latest Posts</h1>
+  <br><br>
+  <center>
+
+  <div class="row">
+  <% posts.forEach(function(post){ %>
+    <div class="col col-lg-4 col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%=post.title%></h5>
+        <p class="card-text">
+          <% if(post.content.length<=60) {%>
+            <% for(let i = 0;i<=post.content.length;i+=20){%>
+              <%=post.content.substring(i,i+19)%>
+          <%}} else { %>
+            <% for(let i = 0;i<=60;i+=20){%>
+              <%=post.content.substring(i,i+19)%>
+          <% }%>...
+        <% }%>
+        </p>
+        <a href="/posts/<%=post._id%>" class="card-link">Read More..</a>
+        <br />
+        <a href="#" class="card-link"><i class="fa fa-heart"></i></a>
+        <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+      </div>
+    </div>
+  </div>
+  <% }); %>
+  </div>
+</center>
+<%- include("partials/footer"); -%>
