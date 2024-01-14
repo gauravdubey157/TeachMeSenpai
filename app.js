@@ -3,10 +3,12 @@
 const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 const aboutContent = "Web platform to enhance community-driven learning, enabling users to share and explore tips, and book recommendations on a variety of technical topics, particularly DSA and Web Development.";
 
-mongoose.connect("mongodb://127.0.0.1:27017/blogDB", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 const app = express();
 
