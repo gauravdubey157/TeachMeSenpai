@@ -1,6 +1,7 @@
 .container-fluid{
   padding: 7% 15%;
 }
+
 body{
   font-family: "Montserrat-light",sans-serif;
   background-color: #191919;
@@ -9,10 +10,12 @@ body{
   margin: 0;
   border: 0;
 }
+
 #title .container-fluid{
   padding: 3% 15% 1%;
   text-align: left;
 }
+
 h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat-Black' ,sans-serif;
 }
@@ -20,26 +23,31 @@ h1,h2,h3,h4,h5,h6{
     background-color: #191919;
     color:#fff;
 }
+
 .bottom-container{
   background-color: #180A0A;
   padding: 50px 0 20px;
   margin-top: 50px;
 }
+
 .footer-link:hover{
   padding:20px;
   margin-top: 30px;
   color:#E0DECA;
   text-decoration: none;
 }
+
 .footer-link{
   padding:20px;
   margin-top: 30px;
   color:#fff;
   text-decoration: none;
 }
+
 .white-section{
     background-color: #fff;
 }
+
 .section-heading{
   font-size: 3rem;
   font-weight: 800;
