@@ -11,8 +11,6 @@ mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Could not connect to MongoDB', err));
 
-
-
 const app = express();
 
 app.use(express.urlencoded({extended: true})); // Use Express's built-in method
